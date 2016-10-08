@@ -159,10 +159,10 @@ MediaLoader.prototype = {
 };
 
 window.mediaElement = document.getElementById('media');
+window.mediaManager = new cast.receiver.MediaManager(mediaElement);
 
 if (USE_AUTHENTICATED_ACCESS) {
 	// use access token to access media
-	window.mediaManager = new cast.receiver.MediaManager(mediaElement);
 	mediaManager.onLoad = function (event) {
 		console.log('onLoad');
 
