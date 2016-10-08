@@ -2,10 +2,6 @@
 <head>
     <title>Dirigible</title>
     <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
-    <!--<script src="https://apis.google.com/js/api.js" type="text/javascript"></script>-->
-    <!--<script type="text/javascript">-->
-<!--gapi.load('auth2', init);-->
-    <!--</script>-->
     <style>
 #media {
 	width:100%;
@@ -17,7 +13,7 @@
 <video id="media"></video>
 <script type='text/javascript'>
 
-var USE_AUTHENTICATED_ACCESS = true;
+var USE_AUTHENTICATED_ACCESS = false;
 
 function MediaLoader(media, video) {
 	this.BUFFER_SIZE = 10 * 1024 * 1024 * 1.0;// 10MB
