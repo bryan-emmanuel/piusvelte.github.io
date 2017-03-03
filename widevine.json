@@ -1,0 +1,45 @@
+{
+  "status": "OK",
+  "drm": [
+    {
+      "type": "WIDEVINE",
+      "system_id": "edef8ba979d64acea3c827dcd51d21ed"
+    }
+  ],
+  "tracks": [
+    {
+      "type": "SD",
+      "key_id": "3x2j5YueZ1gBgzbEq5q3pA==",
+      "key": "iaPRrmQyw8wbKWRugQUfzg==",
+      "pssh": [
+        {
+          "drm_type": "WIDEVINE",
+          "data": "CAESGDN4Mmo1WXVlWjFnQmd6YkVxNXEzcEE9PRoJcGl1c3ZlbHRlIgp2aWQwMDAwMDAxKgJTRDIA"
+        }
+      ]
+    },
+    {
+      "type": "HD",
+      "key_id": "3x2j5YueZ1gBgzbEq5q3pA==",
+      "key": "iaPRrmQyw8wbKWRugQUfzg==",
+      "pssh": [
+        {
+          "drm_type": "WIDEVINE",
+          "data": "CAESGDN4Mmo1WXVlWjFnQmd6YkVxNXEzcEE9PRoJcGl1c3ZlbHRlIgp2aWQwMDAwMDAxKgJIRDIA"
+        }
+      ]
+    },
+    {
+      "type": "AUDIO",
+      "key_id": "3x2j5YueZ1gBgzbEq5q3pA==",
+      "key": "iaPRrmQyw8wbKWRugQUfzg==",
+      "pssh": [
+        {
+          "drm_type": "WIDEVINE",
+          "data": "CAESGDN4Mmo1WXVlWjFnQmd6YkVxNXEzcEE9PRoJcGl1c3ZlbHRlIgp2aWQwMDAwMDAxKgVBVURJTzIA"
+        }
+      ]
+    }
+  ],
+  "already_used": true
+}
