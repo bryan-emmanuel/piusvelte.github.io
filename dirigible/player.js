@@ -590,7 +590,7 @@ sampleplayer.CastPlayer.prototype.preloadVideo_ = function(mediaInformation) {
   var host = new cast.player.api.Host({
     'url': url,
     'mediaElement': self.mediaElement_,
-    'licenseUrl' = licenseUrl
+    'licenseUrl': licenseUrl
   });
   host.onError = function() {
     self.preloadPlayer_.unload();
@@ -833,7 +833,7 @@ sampleplayer.CastPlayer.prototype.loadVideo_ = function(info) {
       var host = new cast.player.api.Host({
         'url': url,
         'mediaElement': this.mediaElement_,
-        'licenseUrl' = licenseUrl
+        'licenseUrl': licenseUrl
       });
       host.onError = loadErrorCallback;
       this.player_ = new cast.player.api.Player(host);
