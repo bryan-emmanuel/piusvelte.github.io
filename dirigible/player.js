@@ -589,7 +589,8 @@ sampleplayer.CastPlayer.prototype.preloadVideo_ = function(mediaInformation) {
   }
   var host = new cast.player.api.Host({
     'url': url,
-    'mediaElement': self.mediaElement_
+    'mediaElement': self.mediaElement_,
+    'licenseUrl' = licenseUrl
   });
   host.onError = function() {
     self.preloadPlayer_.unload();
@@ -598,7 +599,6 @@ sampleplayer.CastPlayer.prototype.preloadVideo_ = function(mediaInformation) {
     self.displayPreviewMode_ = false;
     self.log_('Error during preload');
   };
-  host.licenseUrl = licenseUrl;
   self.preloadPlayer_ = new cast.player.api.Player(host);
   self.preloadPlayer_.preload(protocolFunc(host));
   return true;
@@ -832,9 +832,9 @@ sampleplayer.CastPlayer.prototype.loadVideo_ = function(info) {
       this.log_('Regular video load');
       var host = new cast.player.api.Host({
         'url': url,
-        'mediaElement': this.mediaElement_
+        'mediaElement': this.mediaElement_,
+        'licenseUrl' = licenseUrl
       });
-      host.licenseUrl = licenseUrl;
       host.onError = loadErrorCallback;
       this.player_ = new cast.player.api.Player(host);
       this.player_.load(protocolFunc(host));
@@ -998,9 +998,9 @@ sampleplayer.CastPlayer.prototype.processTtmlCues_ =
       // loading ttml captions
       var host = new cast.player.api.Host({
         'url': '',
-        'mediaElement': this.mediaElement_
+        'mediaElement': this.mediaElement_,
+        'licenseUrl': licenseUrl
       });
-      host.licenseUrl = licenseUrl;
       this.protocol_ = null;
       this.player_ = new cast.player.api.Player(host);
     }
